@@ -1,0 +1,20 @@
+<?php 
+
+class DiscountCalculator {
+
+    const MINIMUM_VALUE = 100;
+
+    const DISCOUNT_VALUE = 20;
+
+    public function apply(float $value) {
+
+        if ($value > self::MINIMUM_VALUE) {
+
+            $value -= self::DISCOUNT_VALUE;
+        }
+
+        return $value;
+    }
+}
+
+?>
